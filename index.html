@@ -5,9 +5,18 @@
         <style>
             *{
                 font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                color: #000;
             }
             .nav-text {
                 text-decoration: none;
+                padding: 5px;
+                text-align: left;
+            }
+            .nav-text-right {
+                text-decoration: none;
+                padding: 5px;
+                text-align: right;
             }
             .logo {
                 display: block;
@@ -20,15 +29,53 @@
             .search {
                 text-align: center;
             }
+            #footer{
+                position: absolute;
+                bottom:0;
+                width:100%;
+                height:45px;   /* Height of the footer */
+                background-color: #eee;
+            }
+            #footer-text{
+                text-decoration: none;
+                padding: 5px; 
+            }
+            #search-bar{
+                margin-top: 50px;
+                height: 40px;
+                width: 575px;
+                border-radius: 30px;
+                border-style: solid;
+                border-width: 1px;
+                color: #ccc;
+            }
+            /*.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+ 
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}*/
         </style>
     </head> 
     <nav>
-        <a href="" class="nav-text">About</a>
-        <a href="" class="nav-text"> Store</a>
-        <a href="" class="nav-text">Gmail</a>
-        <a href="" class="nav-text">Images</a>
-        <a href="" class="nav-text">Google Apps</a>
-        <a href="" class="nav-text">Logon</a>
+        <a href="#" class="nav-text">About</a>
+        <a href="#" class="nav-text">Store</a>
+        <a href="#" class="nav-text-right">Gmail</a>
+        <a href="#" class="nav-text-right">Images</a>
+        <a href="#" class="nav-text-right">Google Apps</a>
+        <a href="#" class="nav-text-right">Logon</a>
     </nav>
         <body>
             <div class="Logo">
@@ -36,21 +83,27 @@
             </div>
             <div class="search">
                 <form>
-                    <input type="text">
-                    <button type="submit"></button>
-                    <label for="search">Google Search</label>
-                    <label for="lucky">I'm Feeling Lucky</label>
+                    <input type="text" id="search-bar"><br><br>
+                    <button type="submit">
+                        <label for="Google Search">Google Search</label>
+                    </button>
+                    <button type="submit">
+                        <label for="lucky">I'm Feeling Lucky</label>
+                    </button>
+                    
                 </form>
             </div>
-        <footer>
-            <a href="" class="nav-text">Advertising</a>
-            <a href="" class="nav-text">Business</a>
-            <a href="" class="nav-text">How Search works</a>
-            <a href="" class="nav-text">Carbon neutral since 2007</a>
-            <a href="" class="nav-text">Privacy</a>
-            <a href="" class="nav-text">Terms</a>
-            <a href="" class="nav-text">Settings</a>
-        </footer>
+        <div id="footer">
+            <footer >
+                <a href="" id="footer-text">Advertising</a>
+                <a href="" id="footer-text">Business</a>
+                <a href="" id="footer-text">How Search works</a>
+                <a href="" id="footer-text">Carbon neutral since 2007</a>
+                <a href="" id="footer-text">Privacy</a>
+                <a href="" id="footer-text">Terms</a>
+                <a href="" id="footer-text">Settings</a>
+            </footer>
+        </div>
        </body>
 
     
