@@ -16,7 +16,7 @@
             .nav-text-right {
                 text-decoration: none;
                 padding: 5px;
-                text-align: right;
+                float: right;
             }
             .logo {
                 display: block;
@@ -36,9 +36,11 @@
                 height:45px;   /* Height of the footer */
                 background-color: #eee;
             }
-            #footer-text{
+            .footer-text{
                 text-decoration: none;
-                padding: 5px; 
+                padding: 15px; 
+                height: 45px;
+                vertical-align: middle;
             }
             #search-bar{
                 margin-top: 50px;
@@ -48,6 +50,17 @@
                 border-style: solid;
                 border-width: 1px;
                 color: #ccc;
+            }
+            .footer-right {
+                float: right;
+                padding-right: 15px;
+            }
+            .footer-left {
+                float: left;
+            }
+            .footer-center {
+                display: inline-block;
+                padding-left: 225px;
             }
             /*.footer-distributed{
 	background-color: #292c2f;
@@ -72,8 +85,8 @@
     <nav>
         <a href="#" class="nav-text">About</a>
         <a href="#" class="nav-text">Store</a>
-        <a href="#" class="nav-text-right">Gmail</a>
         <a href="#" class="nav-text-right">Images</a>
+        <a href="#" class="nav-text-right">Gmail</a>
         <a href="#" class="nav-text-right">Google Apps</a>
         <a href="#" class="nav-text-right">Logon</a>
     </nav>
@@ -95,13 +108,13 @@
             </div>
         <div id="footer">
             <footer >
-                <a href="" id="footer-text">Advertising</a>
-                <a href="" id="footer-text">Business</a>
-                <a href="" id="footer-text">How Search works</a>
-                <a href="" id="footer-text">Carbon neutral since 2007</a>
-                <a href="" id="footer-text">Privacy</a>
-                <a href="" id="footer-text">Terms</a>
-                <a href="" id="footer-text">Settings</a>
+                <a href="" class="footer-text footer-left">Advertising</a>
+                <a href="" class="footer-text footer-left">Business</a>
+                <a href="" class="footer-text footer-left">How Search works</a>
+                <a href="" class="footer-text footer-center">Carbon neutral since 2007</a>
+                <a href="" class="footer-text footer-right">Settings</a>
+                <a href="" class="footer-text footer-right">Terms</a>
+                <a href="" class="footer-text footer-right">Privacy</a>
             </footer>
         </div>
        </body>
